@@ -1,1 +1,21 @@
+<?php
+echo "<html><body>";
+echo "<h1>Character Frequencies</h1>"; 
+  
+echo "<table border='1'> <tr>
+               <td>Character</td>
+               <td>Frequency</td></tr>
+               ";
+               
+$s = "abcdefgefgeefgeabceeddeecce";
+$letters = array("a","b","c","d","e","f","g");
+$len = count($letters);
+for($i=0; $i<$len; $i++) { 
+	$count = substr_count($s, $letters[$i]);
+     echo "<tr><td>$letters[$i]</td> <td>$count</td></tr>";
+     }
+     
+echo "</table>";
+echo "</body></html>";
+?>
 
